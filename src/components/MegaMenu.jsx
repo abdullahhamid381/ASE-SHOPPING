@@ -48,10 +48,10 @@ const MegaMenu = () => {
                     })
                 }
             </div> */}
-            <div>
+            <div style={{boxShadow:'0 0 7px 0 #00000029'}}>
                 <Slider />
             </div>
-            <div>
+            <div style={{boxShadow:'0 0 7px 0 #00000029'}}>
                 <EasyReturn />
             </div>
 
