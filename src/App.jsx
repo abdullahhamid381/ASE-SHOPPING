@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./components/Button";
+
 import Navbar from "./components/Navbar/Navbar";
 import FlashSale from "./components/Reuseable/FlashSale";
 import Search from "./components/Search";
