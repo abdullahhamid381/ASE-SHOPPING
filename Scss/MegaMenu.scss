@@ -1,0 +1,28 @@
+.main-parent-menu{
+   
+    width: 70%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: auto;
+    gap: 30px;
+   
+    .mega-menu{
+        background: white;
+        padding: 10px 30px;
+     
+     .items{
+        margin-top: 5px;
+        .main{
+            font-size: 12px;
+
+        }
+        .main-sub-cata{
+            display: flex;
+            display: none;       
+        }
+     }
+     .main:hover .main-sub-cata{
+        display: block !important;
+     }
+    }
+}

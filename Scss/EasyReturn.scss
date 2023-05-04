@@ -1,0 +1,20 @@
+.easy-return-parent{
+    background: white;
+    height: 100%;
+   
+   .sub-parent{
+    padding: 0 30px;
+    padding-top: 10px;
+    .return-flex{
+        display: flex !important;
+        align-items: center;
+        margin: 30px 0;
+        gap: 10px;
+
+    }
+    img{
+        width: 100%;
+    }
+   }
+   
+}

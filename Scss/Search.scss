@@ -1,0 +1,50 @@
+.search-parent{
+ margin:0 0 30px 0;
+    background: #FFFFFF;
+ 
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        align-items: center;
+        margin: auto;
+        place-items: center;
+        width: 70%;
+        input{
+            font-size: 14px;
+            width: 350px;
+            padding: 10px 20px;
+            outline: none;
+            border: none;
+            border: 1px solid rgba(128, 128, 128, 0.293);
+        }
+        h1{
+            font-weight: lighter;
+            margin-right: 40px;
+        }
+        button{
+            font-size: 18px;
+            margin-left: 20px;
+            padding: 8px 20px;
+            background: #E07E1B;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    }
+    .grid-two{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        place-items: center;
+        gap: 20px;
+        align-items:center ;
+      div{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        span{
+            font-size: 18px;
+        }
+      }
+      
+    }
+}
