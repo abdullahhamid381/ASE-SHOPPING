@@ -309,3 +309,112 @@ export const brands=[
         span:'Apple'
     },
 ]
+
+
+
+export const size=[
+    {
+        span:'Ace Elec'
+    },
+    {
+        span:'Adidas'
+    },
+    {
+        span:'Agapeon'
+    },
+    {
+        span:'Apple'
+    },
+]
+
+
+export const gender=[
+    {
+        span:'Boys'
+    },
+    {
+        span:'Girls'
+    },
+    {
+        span:'Male'
+    },
+    {
+        span:'Female'
+    },
+]
+export const sellerscore=[
+    {
+        span:'80% & More',
+        id:'first'
+    },
+    {
+        span:'60% & More',
+        id:'second'
+    },
+    {
+        span:'40% & More'
+        ,id:'third'
+    },
+    {
+        span:'20% & More',
+        id:'fourth'
+    },
+]
+// products items list
+
+export const productitems=[
+    {
+        img:'',
+        button:'',
+        tilte:'',
+        price:'',
+        oldprice:'',
+
+
+    },
+    {
+        img:'',
+        button:'',
+        tilte:'',
+        price:'',
+        oldprice:'',
+
+
+    },
+    {
+        img:'',
+        button:'',
+        tilte:'',
+        price:'',
+        oldprice:'',
+
+
+    },
+    {
+        img:'',
+        button:'',
+        tilte:'',
+        price:'',
+        oldprice:'',
+
+
+    },
+    {
+        img:'',
+        button:'',
+        tilte:'',
+        price:'',
+        oldprice:'',
+
+
+    },
+    {
+        img:'',
+        button:'',
+        tilte:'',
+        price:'',
+        oldprice:'',
+
+
+    },
+]

@@ -1,0 +1,31 @@
+.product-parent-item{
+    .product-discount-flex{
+        .discount-title{
+
+        }
+    }
+    .product-items-list-parent{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+        img{
+            width: 100%;
+        }
+        button{
+            background: #276076;
+            color: white;
+            font-size: 8px;
+            padding: 5px;
+            border-radius: 4px;
+        }
+        .product-title{
+            font-size: 12px;
+        }
+        span{
+            font-size: 12px;
+        }
+        del{
+            font-size: 12px;
+        }
+    }
+}
