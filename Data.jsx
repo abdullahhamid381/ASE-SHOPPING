@@ -291,3 +291,21 @@ export const FlashSlae = [
 
     },
 ]
+
+
+// PRODUCTS SECTION 
+
+export const brands=[
+    {
+        span:'Ace Elec'
+    },
+    {
+        span:'Adidas'
+    },
+    {
+        span:'Agapeon'
+    },
+    {
+        span:'Apple'
+    },
+]

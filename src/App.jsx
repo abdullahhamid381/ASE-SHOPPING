@@ -6,17 +6,19 @@ import Search from "./components/Search";
 import TopProducts from './components/TopProducts'
 import Laptop from './components/Laptop'
 import MegaMenu from './components/MegaMenu'
+import Products from "./components/Products/Products";
 const App = () => {
   return (
     <section
     >
-      <Navbar />
+      {/* <Navbar />
 
       <Search/>
       <MegaMenu/>
       <TopProducts/>
    <FlashSale/>
-   <Laptop/>
+   <Laptop/> */}
+   <Products/>
     </section>
   );
 };
