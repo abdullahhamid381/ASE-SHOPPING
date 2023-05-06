@@ -10,8 +10,8 @@ const NavLinks = () => {
       {links.map((link) => (
         <div className="navbar-parent">
           <div className="px-3 text-left md:cursor-pointer group">
-            <h1
-              className="py-7 flex justify-between items-center md:pr-0 pr-5 group"
+            <h1 c
+              className="py-7 flex justify-between items-center md:pr-0 pr-5 group main-links"
               onClick={() => {
                 heading !== link.name ? setHeading(link.name) : setHeading("");
                 setSubHeading("");

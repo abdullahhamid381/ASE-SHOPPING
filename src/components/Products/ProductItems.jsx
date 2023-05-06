@@ -10,6 +10,7 @@ import mobile from '../../assets/29.jpg'
 import './ProductsScss/ProductsItems.scss'
 import { productitems } from '../../../Data';
 import { AiOutlineHeart } from 'react-icons/ai'
+import { Link } from 'react-router-dom';
 const ProductItems = () => {
     const [value, setValue] = React.useState(2);
     const [age, setAge] = React.useState('');
@@ -53,7 +54,8 @@ const ProductItems = () => {
                 {
                     productitems.map((items) => {
                         return (
-                            <div>
+                           <Link to='products'>
+                             <div>
                                 <div className='product-img'>
                                     <div>
                                         <img src={mobile} alt="" />
@@ -88,6 +90,7 @@ const ProductItems = () => {
                                     </div>
                                 </div>
                             </div>
+                           </Link>
                         )
                     })
                 }
