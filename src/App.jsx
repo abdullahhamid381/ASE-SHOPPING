@@ -1,16 +1,19 @@
 import React from "react";
 
 
-import Products from "./components/Products/Products";
+
 import Home from "./components/Home/Home";
 import {Routes, Route } from "react-router";
+import Category from "./components/Category/Category";
+import Cart from "./components/Cart/Cart";
 const App = () => {
   return (
     <section
     >
     <Routes>
       <Route path="/" element={<Home/>}/>
-      <Route path="products" element={<Products/>}/>
+      <Route path="category" element={<Category/>}/>
+      <Route path="cart" element={<Cart/>}/>
     </Routes>
     </section>
   );

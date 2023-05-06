@@ -7,11 +7,11 @@ import Select from '@mui/material/Select';
 import Rating from '@mui/material/Rating';
 import Typography from '@mui/material/Typography';
 import mobile from '../../assets/29.jpg'
-import './ProductsScss/ProductsItems.scss'
+import './Categoryscss/CategoryItems.scss'
 import { productitems } from '../../../Data';
 import { AiOutlineHeart } from 'react-icons/ai'
 import { Link } from 'react-router-dom';
-const ProductItems = () => {
+const CategoryItems = () => {
     const [value, setValue] = React.useState(2);
     const [age, setAge] = React.useState('');
 
@@ -100,4 +100,4 @@ const ProductItems = () => {
     )
 }
 
-export default ProductItems
+export default CategoryItems

@@ -1,5 +1,5 @@
 import React from 'react'
-import './ProductsScss/Product.scss'
+import './Categoryscss/Category.scss'
 import TopProducts from '../TopProducts'
 import Navbar from '../Navbar/Navbar'
 import Search from '../Search'
@@ -15,12 +15,13 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import Rating from '@mui/material/Rating';
 import Typography from '@mui/material/Typography';
-import Productfilter from './Productfilter'
-import ProductItems from './ProductItems'
+
 import Slider from '../Slider'
+import CategoryFilter from './CategoryFilter'
+import CategoryItems from './CategoryItems'
 
 
-const Products = () => {
+const Category = () => {
     const [value, setValue] = React.useState(2);
     const [age, setAge] = React.useState('');
 
@@ -58,14 +59,14 @@ const Products = () => {
 
                 {/* PRODUCT FILTER SECTION */}
                 <div>
-                    <Productfilter/>
+                    <CategoryFilter/>
                 </div>
 
 
 
                
                 <div className='product-list-parent'>
-                    <ProductItems/>
+                    <CategoryItems/>
 
                   
 
@@ -77,4 +78,4 @@ const Products = () => {
     )
 }
 
-export default Products
+export default Category

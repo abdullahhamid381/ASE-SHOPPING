@@ -2,6 +2,7 @@ import React from 'react'
 import '../../Scss/Search.scss'
 import { BiUserCircle } from 'react-icons/bi'
 import { AiOutlineQuestionCircle,AiOutlineShoppingCart,AiOutlineUser } from 'react-icons/ai'
+import { Link } from 'react-router-dom'
 const Search = () => {
     return (
         <div className='search-parent'>
@@ -22,10 +23,14 @@ const Search = () => {
                         <span><AiOutlineQuestionCircle /></span>
                         <span> Help</span>
                     </div>
+                    <Link to='cart'>
                     <div>
-                        <span><AiOutlineShoppingCart /></span>
+                     
+                       <span><AiOutlineShoppingCart /></span>
                         <span> Cart</span>
+                      
                     </div>
+                    </Link>
 
                 </div>
             </div>

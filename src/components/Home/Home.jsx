@@ -13,13 +13,13 @@ const Home = () => {
             <Navbar />
             <Search />
            <MegaMenu />
-              <Link to='products'>
+              <Link to='category'>
                 <TopProducts />
             </Link>
-            <Link to='products'>
+            <Link to='category'>
                 <FlashSale />
             </Link>
-            <Link to='products'>
+            <Link to='category'>
                 <Laptop />
             </Link>
 

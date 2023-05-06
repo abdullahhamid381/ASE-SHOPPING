@@ -1,9 +1,9 @@
 import React from 'react'
 import { brands, size, gender, sellerscore } from '../../../Data'
-import './ProductsScss/ProductsFilter.scss'
+import './Categoryscss/CategoryFilter.scss'
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
-const Productfilter = () => {
+const CategoryFilter = () => {
     return (
         <div className='filter-parent'>
             <div className='brands'>
@@ -104,4 +104,4 @@ const Productfilter = () => {
     )
 }
 
-export default Productfilter
+export default CategoryFilter
