@@ -1,0 +1,20 @@
+.filter-parent{
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    .brands{
+       h4{
+        border-bottom: 1px solid #F1F3F6;
+        padding-bottom: 10px;
+       }
+       .brands-name{
+        padding: 20px 0;
+        .brands-list{
+            padding: 5px 0;
+        }
+       }
+       .range{
+        padding: 5px 0;
+       }
+    }
+}

@@ -4,11 +4,17 @@ import Logo from "../../assets/Logo.png";
 import Button from "../Button";
 import NavLinks from "./NavLinks";
 import './Navbar.scss'
+import Search from "../Search";
+import MegaMenu from '../MegaMenu'
+import TopProducts from '../TopProducts';
+import FlashSale from '../Reuseable/FlashSale'
+import Laptop from "../Laptop";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
- <div className="navbar-parent" style={{background:'#2874F0'}}>
-     <nav className="bg-white" style={{width:'80%',background:'none', margin:'auto'}}>
+ <div className="navbar-parent" >
+  <div className="navbar-background" style={{background:'#2874F0'}}>
+  <nav className="bg-white" style={{width:'80%',background:'none', margin:'auto'}}>
       <div className="flex items-center font-medium justify-around" style={{height:'70px'}}>
         <div className="z-50 p-5 md:w-auto w-full flex justify-between">
           <img src={Logo} alt="logo" className="md:cursor-pointer h-9" />
@@ -47,6 +53,22 @@ const Navbar = () => {
       </div>
     
     </nav>
+  </div>
+    <div>
+      <Search/>
+    </div>
+    <div>
+      <MegaMenu/>
+    </div>
+    <div>
+      <TopProducts/>
+    </div>
+    <div>
+      <FlashSale/>
+    </div>
+    <div>
+      <Laptop/>
+    </div>
  </div>
   );
 };

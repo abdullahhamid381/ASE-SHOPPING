@@ -17,6 +17,7 @@ import Rating from '@mui/material/Rating';
 import Typography from '@mui/material/Typography';
 import Productfilter from './Productfilter'
 import ProductItems from './ProductItems'
+import Slider from '../Slider'
 
 
 const Products = () => {
@@ -28,18 +29,23 @@ const Products = () => {
     };
     return (
         <div className='products-parent'>
-            <div>
+           <div className="products-background">
+           <div>
                 <Navbar />
             </div>
+           
             <div>
                 <Search />
+            </div>
+            {/* <div>
+                <Slider/>
             </div>
             <div>
                 <TopProducts />
             </div>
             <div>
                 <Laptop />
-            </div>
+            </div> */}
 
 
 
@@ -65,6 +71,7 @@ const Products = () => {
 
                 </div>
             </div>
+           </div>
 
         </div>
     )

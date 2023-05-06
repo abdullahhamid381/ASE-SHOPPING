@@ -9,6 +9,7 @@ import Typography from '@mui/material/Typography';
 import mobile from '../../assets/29.jpg'
 import './ProductsScss/ProductsItems.scss'
 import { productitems } from '../../../Data';
+import { AiOutlineHeart } from 'react-icons/ai'
 const ProductItems = () => {
     const [value, setValue] = React.useState(2);
     const [age, setAge] = React.useState('');
@@ -18,6 +19,11 @@ const ProductItems = () => {
     };
     return (
         <div className='product-parent-item'>
+            <div className='links'>
+
+                
+
+            </div>
             <div className='product-discount-flex'>
                 <div className='discount-title'>
                     <h2>Discounts up to 60% Off</h2>
@@ -44,42 +50,47 @@ const ProductItems = () => {
 
 
             <div className='product-items-list-parent'>
-               {
-                productitems.map((items)=>{
-                    return(
-                        <div>
-                        <div>
-                            <img src={mobile} alt="" />
-                        </div>
-                        <div>
-                            <button>Offical Store</button>
-                            <h6 className='product-title'>Freeyond M5,8GB+128GB,6.52", 50MP,4G Smartphone 5000mAh Dual</h6>
-                            <span>PKR 9,590</span>
-                            <br />
-                            <del>PKR 10,590</del>
-    
+                {
+                    productitems.map((items) => {
+                        return (
                             <div>
-                                <Box
-                                    sx={{
-                                        '& > legend': { mt: 2 },
-                                    }}
-                                >
-    
-    
-                                    <Rating
-                                        name="simple-controlled"
-                                        value={value}
-                                        onChange={(event, newValue) => {
-                                            setValue(newValue);
-                                        }}
-                                    />
-                                </Box>
+                                <div className='product-img'>
+                                    <div>
+                                        <img src={mobile} alt="" />
+                                    </div>
+                                    <div className='cart-button'>
+                                        <AiOutlineHeart />
+                                    </div>
+                                </div>
+                                <div>
+                                    <button>Offical Store</button>
+                                    <h6 className='product-title'>Freeyond M5,8GB+128GB,6.52", 50MP,4G Smartphone 5000mAh Dual</h6>
+                                    <span>PKR 9,590</span>
+                                    <br />
+                                    <del>PKR 10,590</del>
+
+                                    <div>
+                                        <Box
+                                            sx={{
+                                                '& > legend': { mt: 2 },
+                                            }}
+                                        >
+
+
+                                            <Rating
+                                                name="simple-controlled"
+                                                value={value}
+                                                onChange={(event, newValue) => {
+                                                    setValue(newValue);
+                                                }}
+                                            />
+                                        </Box>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    )
-                })
-               }
+                        )
+                    })
+                }
             </div>
         </div>
 

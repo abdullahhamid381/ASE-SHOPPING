@@ -1,21 +1,28 @@
 .products-parent{
-    .grid-parent-products{
-        display: grid;
-        width: 70%;
-        margin: auto;
-        grid-template-columns: 1fr 5fr;
-        padding: 20px 0;
-        gap: 40px;
-        .product-discount-flex{
-            display: flex;
-            justify-content: space-between;
-            border-bottom: 1px solid rgba(205, 204, 204, 0.384);
+    .products-background{
+        background: #F1F3F6;
+        .grid-parent-products{
+            display: grid;
+            /* width: 95%; */
+            margin: auto;
+            grid-template-columns: 1fr auto;
+            padding: 20px 0;
+          
+            width: 100%;
+            max-width: 1200px;
             
-            select{
-                border: none;
-                outline: none;
-                option{}
+            .product-discount-flex{
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid rgba(205, 204, 204, 0.384);
+                
+                select{
+                    border: none;
+                    outline: none;
+                    option{}
+                }
             }
         }
     }
+   
 }
