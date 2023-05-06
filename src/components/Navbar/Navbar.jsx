@@ -3,11 +3,13 @@ import { Link } from "react-router-dom";
 import Logo from "../../assets/Logo.png";
 import Button from "../Button";
 import NavLinks from "./NavLinks";
+import './Navbar.scss'
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <nav className="bg-white" style={{width:'80%',margin:'10px auto 20px auto',}}>
-      <div className="flex items-center font-medium justify-around">
+ <div className="navbar-parent" style={{background:'#2874F0'}}>
+     <nav className="bg-white" style={{width:'80%',background:'none', margin:'auto'}}>
+      <div className="flex items-center font-medium justify-around" style={{height:'70px'}}>
         <div className="z-50 p-5 md:w-auto w-full flex justify-between">
           <img src={Logo} alt="logo" className="md:cursor-pointer h-9" />
           <div className="text-3xl md:hidden" onClick={() => setOpen(!open)}>
@@ -43,7 +45,9 @@ const Navbar = () => {
           </div>
         </ul>
       </div>
+    
     </nav>
+ </div>
   );
 };
 

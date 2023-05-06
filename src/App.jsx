@@ -11,14 +11,14 @@ const App = () => {
   return (
     <section
     >
-      {/* <Navbar />
+      <Navbar />
 
       <Search/>
       <MegaMenu/>
       <TopProducts/>
    <FlashSale/>
-   <Laptop/> */}
-   <Products/>
+   <Laptop/>
+   {/* <Products/> */}
     </section>
   );
 };

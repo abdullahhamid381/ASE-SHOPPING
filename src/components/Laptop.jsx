@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-
+import {MdOutlineLaptopChromebook} from 'react-icons/md'
 import {MdExpandLess} from 'react-icons/md'
 
 // Import Swiper React components
@@ -14,21 +14,19 @@ import led from '../assets/27.jpg'
 import addtwo from '../assets/26.png'
 
 import { FlashSlae } from "../../Data";
-import Clock from "./Reuseable/Countdown/Clock";
+
 const Laptop = () => {
     return (
         <div className='flash-sale-parent'>
+            <div className="sub-flash-grid">
             <div className='timer-parent'>
-                <div>
-                    <span></span>
-                    <span>Laptop Accessories</span>
+                <div style={{display:'flex',alignItems:'center'}}>
+                    
+                    <span style={{fontSize:'30px'}}>Flash Sales</span>
                 </div>
-                <div>
-                   {/* <Clock/> */}
-                </div>
+              
                 <div className="see-all">
-                    <span>See All</span>
-                    <span className="arrow"><MdExpandLess/></span>
+                   <button>VIEW ALL</button>
                 </div>
             </div>
 
@@ -41,10 +39,10 @@ const Laptop = () => {
 
                 navigation={true}
 
-                autoplay={{
-                    delay: 2500,
-                    disableOnInteraction: false,
-                }}
+                // autoplay={{
+                //     delay: 2500,
+                //     disableOnInteraction: false,
+                // }}
 
 
                 breakpoints={{
@@ -57,7 +55,7 @@ const Laptop = () => {
                         spaceBetween: 40,
                     },
                     1024: {
-                        slidesPerView: 6,
+                        slidesPerView: 5,
                         spaceBetween: 10,
                     },
                 }}
@@ -73,9 +71,9 @@ const Laptop = () => {
                         <h5>
                             Maybelline Fit Me Matte And Poreless Foundation 30ml - 356 Warm Coconut
                         </h5>
-                        <span>PKR 12,75</span>
+                        <span>Incl of offer</span>
                         <br />
-                        <del>PKR 17,00</del>
+                        <span className="price">PKR 12,75</span>
                     </div>
                       </SwiperSlide>
                     )
@@ -84,6 +82,7 @@ const Laptop = () => {
                 
             </Swiper>
              
+            </div>
             </div>
             <div style={{marginTop:'30px'}}>
                 <img src={addtwo} alt=""  width={'100%'}/>

@@ -11,23 +11,23 @@ import "swiper/css/pagination";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
 import flash from '../../assets/24.jpg'
-
+import {IoIosFlash} from 'react-icons/io'
 import './FlashSale.scss'
 import { FlashSlae } from "../../../Data";
 const FlashSale = () => {
     return (
         <div className='flash-sale-parent'>
-            <div className='timer-parent'>
-                <div>
-                    <span></span>
-                    <span>Flash Sales</span>
+          <div className="sub-flash-grid">
+          <div className='timer-parent'>
+                <div style={{display:'flex',alignItems:'center'}}>
+                    <span><IoIosFlash/></span>
+                    <span style={{fontSize:'30px'}}>Flash Sales</span>
                 </div>
                 <div>
                     <Clock />
                 </div>
                 <div className="see-all">
-                    <span>See All</span>
-                    <span className="arrow"><MdExpandLess/></span>
+                   <button>VIEW ALL</button>
                 </div>
             </div>
 
@@ -40,10 +40,10 @@ const FlashSale = () => {
 
                 navigation={true}
 
-                autoplay={{
-                    delay: 2500,
-                    disableOnInteraction: false,
-                }}
+                // autoplay={{
+                //     delay: 2500,
+                //     disableOnInteraction: false,
+                // }}
 
 
                 breakpoints={{
@@ -56,7 +56,7 @@ const FlashSale = () => {
                         spaceBetween: 40,
                     },
                     1024: {
-                        slidesPerView: 6,
+                        slidesPerView: 5,
                         spaceBetween: 10,
                     },
                 }}
@@ -72,9 +72,9 @@ const FlashSale = () => {
                         <h5>
                             Maybelline Fit Me Matte And Poreless Foundation 30ml - 356 Warm Coconut
                         </h5>
-                        <span>PKR 12,75</span>
+                        <span>Incl of offer</span>
                         <br />
-                        <del>PKR 17,00</del>
+                        <span className="price">PKR 12,75</span>
                     </div>
                       </SwiperSlide>
                     )
@@ -84,6 +84,7 @@ const FlashSale = () => {
             </Swiper>
              
             </div>
+          </div>
             <div style={{marginTop:'30px'}}>
                 <img src={addfirst} alt=""  width={'100%'}/>
             </div>

@@ -35,12 +35,12 @@ const Timer = ({ targetDate }) => {
     <div style={{display:'flex'}}>
       {days && (
         <div>
-          <span >{formatTime(days)}</span > <span style={{color:"white"}}> Days Left</span>{" "}
+          <span >{formatTime(days)}</span > <span style={{color:"black"}}> Days Left</span>{" "}
         </div>
       )}
       <div style={{display:'flex', marginLeft:'10px',gap:'5px'}}>
-        <span>{formatTime(hours)}</span><span style={{color:"white"}}>:</span>
-        <span>{formatTime(minutes)}</span><span style={{color:"white"}}>:</span>
+        <span>{formatTime(hours)}</span><span style={{color:"black"}}>:</span>
+        <span>{formatTime(minutes)}</span><span style={{color:"black"}}>:</span>
         <span>{formatTime(seconds)}</span>
       </div>
     </div>
